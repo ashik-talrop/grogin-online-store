@@ -1,0 +1,324 @@
+{
+  "products": [
+    {
+      "link": "#",
+      "discountPercentage": 75,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/potatoes.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Yellow Potatoes Whole Fresh, 5lb Bag",
+      "rating": {
+        "stars": 5,
+        "reviews": 3
+      },
+      "price": {
+        "currentRate": 0.50,
+        "originalRate": 1.99
+      },
+      "is_organic": false
+    },
+    {
+      "link": "#",
+      "discountPercentage": 50,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/orange.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Large Bagged Oranges",
+      "rating": {
+        "stars": 4,
+        "reviews": 3
+      },
+      "price": {
+        "currentRate": 0.89,
+        "originalRate": 1.78
+      },
+      "is_organic": true
+    },
+    {
+      "link": "#",
+      "discountPercentage": 31,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/strawberry.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Strawberries – 1lb",
+      "rating": {
+        "stars": 4,
+        "reviews": 3
+      },
+      "price": {
+        "currentRate": 1.50,
+        "originalRate": 2.15
+      },
+      "is_organic": false
+    },
+    {
+      "link": "#",
+      "discountPercentage": 13,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/simple-kitchen.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Simple Kitchen FD Sliced Strawberries – 1.08lb",
+      "rating": {
+        "stars": 2,
+        "reviews": 3
+      },
+      "price": {
+        "currentRate": 21.90,
+        "originalRate": 24.90
+      },
+      "is_organic": false
+    },
+    {
+      "link": "#",
+      "discountPercentage": 58,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/apple.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Organic Carrots, 2lb Bag",
+      "rating": {
+        "stars": 4,
+        "reviews": 3
+      },
+      "price": {
+        "currentRate": 0.75,
+        "originalRate": 1.75
+      },
+      "is_organic": false
+    },
+    {
+      "link": "#",
+      "discountPercentage": 56,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/banana.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Marketside Fresh Organic Bananas, Bunch",
+      "rating": {
+        "stars": 3,
+        "reviews": 2
+      },
+      "price": {
+        "currentRate": 0.89,
+        "originalRate": 1.99
+      },
+      "is_organic": true
+    },
+    {
+      "link": "#",
+      "discountPercentage": 16,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/wraps.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Large Garden Spinach & Herb Wrap Tortillas –…",
+      "rating": {
+        "stars": 4,
+        "reviews": 3
+      },
+      "price": {
+        "currentRate": 27.90,
+        "originalRate": 32.90
+      },
+      "is_organic": false
+    },
+    {
+      "link": "#",
+      "discountPercentage": 10,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/carmel-apple.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Halloween Harvest Caramel Apple Soft Caramels –…",
+      "rating": {
+        "stars": 3,
+        "reviews": 3
+      },
+      "price": {
+        "currentRate": 19.37,
+        "originalRate": 21.37
+      },
+      "is_organic": false
+    },
+    {
+      "link": "#",
+      "discountPercentage": 26,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/brinjal.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Fresh Purple Eggplant",
+      "rating": {
+        "stars": 4,
+        "reviews": 3
+      },
+      "price": {
+        "currentRate": 2.99,
+        "originalRate": 3.99
+      },
+      "is_organic": false
+    },
+    {
+      "link": "#",
+      "discountPercentage": 50,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/pomegranate.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Fresh Pomegranate, Each",
+      "rating": {
+        "stars": 4,
+        "reviews": 3
+      },
+      "price": {
+        "currentRate": 1.50,
+        "originalRate": 2.99
+      },
+      "is_organic": false
+    },
+    {
+      "link": "#",
+      "discountPercentage": 75,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/lemon.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Fresh Lemon, Each",
+      "rating": {
+        "stars": 2,
+        "reviews": 2
+      },
+      "price": {
+        "currentRate": 0.50,
+        "originalRate": 1.99
+      },
+      "is_organic": false
+    },
+    {
+      "link": "#",
+      "discountPercentage": 14,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/veg-1.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Fresh Cauliflower, Each",
+      "rating": {
+        "stars": 3,
+        "reviews": 2
+      },
+      "price": {
+        "currentRate": 12.79,
+        "originalRate": 14.79
+      },
+      "is_organic": false
+    },
+    {
+      "link": "#",
+      "discountPercentage": 36,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/veg-2.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Fresh Broccoli Crowns, Each",
+      "rating": {
+        "stars": 4,
+        "reviews": 3
+      },
+      "price": {
+        "currentRate": 11.54,
+        "originalRate": 17.88
+      },
+      "is_organic": false
+    },
+    {
+      "link": "#",
+      "discountPercentage": 41,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/berries.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Blackberries – 6oz",
+      "rating": {
+        "stars": 4,
+        "reviews": 3
+      },
+      "price": {
+        "currentRate": 2.99,
+        "originalRate": 4.99
+      },
+      "is_organic": false
+    },
+    {
+      "link": "#",
+      "discountPercentage": 8,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/quest.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "30g Protein Shake – Salted Caramel – 11 fl oz-4pk",
+      "rating": {
+        "stars": 4,
+        "reviews": 3
+      },
+      "price": {
+        "currentRate": 11.99,
+        "originalRate": 12.99
+      },
+      "is_organic": false
+    },
+    {
+      "link": "#",
+      "discountPercentage": 17,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/green-apple.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Fresh Granny Smith Apple, Each",
+      "rating": {
+        "stars": 4,
+        "reviews": 3
+      },
+      "price": {
+        "currentRate": 15.99,
+        "originalRate": 9.88
+      },
+      "is_organic": true
+    }
+  ]
+}

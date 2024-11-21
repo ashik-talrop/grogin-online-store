@@ -1,11 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grogin</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grogin</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <section class="sale">
+            <div class="left">
+                <p>
+                    FREE delivery & 40% Discount for next 3 orders! Place your
+                    1st order in.
+                </p>
+            </div>
+            <div class="right">
+                <p>
+                    Until the end of the sale: <span id="days">47</span>days
+                    <span id="hours">06</span> hours
+                    <span id="minutes">52</span> minutes
+                    <span id="seconds">13</span> sec.
+                </p>
+            </div>
+        </section>
+        <div class="wrapper">
+            <section class="abt">
+                <div class="left">
+                    <a href="#">About Us</a>
+                    <a href="#">My account</a>
+                    <a href="#" class="line">Wishlist</a>
+                    <p>
+                        We deliver to you every day from
+                        <span class="orange">7:00 to 23:00</span>
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="lan">
+                        <a href="#"
+                            >English
+                            <img
+                                src="assets/images/list-icon.svg"
+                                alt="list-icon"
+                            />
+                        </a>
+                    </div>
+                    <div class="currency">
+                        <a href="#"
+                            >USD
+                            <img
+                                src="assets/images/list-icon.svg"
+                                alt="list-icon"
+                            />
+                        </a>
+                    </div>
+                    <a href="#">Order Tracking</a>
+                </div>
+            </section>
+        </div>
+        <hr />
+        <div class="wrapper">
+            <section class="header">
+                <div class="logo">
+                    <img src="assets/images/grogin-logo.svg" alt="logo" />
+                </div>
+                <div class="location">
+                    <img src="assets/images/location.svg" alt="location" />
+                </div>
+                <div class="deliver">
+                    <p class="light">Deliver to</p>
+                    <p class="boldd">all</p>
+                </div>
+                <div class="input">
+                    <input
+                        id="search-input"
+                        type="text"
+                        placeholder="Search for products, categories or brands..."
+                    />
+                    <button id="search-button">
+                        <img src="assets/images/search.svg" alt="search" />
+                    </button>
+                </div>
+                <div class="icons">
+                    <div class="account">
+                        <button>
+                            <img
+                                src="assets/images/account-icon.svg"
+                                alt="account"
+                            />
+                            <p>Account</p>
+                        </button>
+                    </div>
+                    <div class="wishlist">
+                        <button>
+                            <img
+                                src="assets/images/heart-icon.svg"
+                                alt="Wishlist"
+                            />
+                            <p>Wishlist</p>
+                        </button>
+                    </div>
+                    <div class="cart">
+                        <button>
+                            <img src="assets/images/cart.svg" alt="Cart" />
+                            <p>Your Cart</p>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <hr />
+        <div class="wrapper">
+            <section class="category">
+                <div class="left">
+                    <div class="home">
+                        <a href="#"
+                            >Home
+                            <img
+                                src="assets/images/list-icon.svg"
+                                alt="list-icon"
+                            />
+                        </a>
+                    </div>
+                    <div class="shop">
+                        <a href="#"
+                            >Shop
+                            <img
+                                src="assets/images/list-icon.svg"
+                                alt="list-icon"
+                            />
+                        </a>
+                    </div>
+                    <div class="fruits">
+                        <a href="#">Fruits & Vegetables</a>
+                    </div>
+                    <div class="Beverages">
+                        <a href="#">Beverages</a>
+                    </div>
+                    <div class="blog">
+                        <a href="#">Blog</a>
+                    </div>
+                    <div class="contact">
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="trend">
+                        <a href="#"
+                            >Trending Products
+                            <img
+                                src="assets/images/list-icon.svg"
+                                alt="list-icon"
+                            />
+                        </a>
+                    </div>
+                    <div class="finished">
+                        <a href="#"
+                            >Almost Finished
+                            <div>SALE</div>
+                            <img
+                                src="assets/images/list-icon.svg"
+                                alt="list-icon"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <hr />
+        <div class="wrapper">
+            <section class="row">
+                <a href="#" class="light"
+                    >Home
+                    <img
+                        src="assets/images/list-icon.svg"
+                        alt="list-icon"
+                        class="rot"
+                    />
+                </a>
+
+                <a href="#" class="dark">Shop</a>
+            </section>
+        </div>
+        <div class="wrapper">
+            <section class="product-section">
+                <div class="filter-section">
+                    <div class="widget-price-filter">
+                        <h6>Widget price filter</h6>
+                        <div class="min-max">
+                            <div class="top">
+                                <span>Min price</span>
+                                <span>Max price</span>
+                            </div>
+                            <div class="bottom">
+                                <input type="text" placeholder="0" />
+                                <p>-</p>
+                                <input type="text" placeholder="30" />
+                            </div>
+                        </div>
+
+                        <div class="price-range">
+                            <div class="slider-track"></div>
+                            <div class="slider-track-highlight"></div>
+                            <div class="slider-thumb left"></div>
+                            <div class="slider-thumb right"></div>
+                        </div>
+                        <div class="range">
+                            <div class="left">
+                                <p>Price: $0 — $30</p>
+                            </div>
+                            <div class="right">
+                                <button>Filter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="product-categories">
+                        <h4>Product Categories</h4>
+                        <div class="checkbox">
+                            <div class="first">
+                                <input type="checkbox" checked />
+                                <p class="tlt">Fruits & Vegetables</p>
+                            </div>
+                            <img src="assets/images/plus.svg" alt="plus" />
+                        </div>
+                        <div class="checkbox">
+                            <div class="first">
+                                <input type="checkbox" />
+                                <p class="tlt">Baby & Pregnancy</p>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <div class="first">
+                                <input type="checkbox" />
+                                <p class="tlt">Beverages</p>
+                            </div>
+                            <img src="assets/images/plus.svg" alt="plus" />
+                        </div>
+                        <div class="checkbox">
+                            <div class="first">
+                                <input type="checkbox" />
+                                <p class="tlt">Meats & Seafood</p>
+                            </div>
+                            <img src="assets/images/plus.svg" alt="plus" />
+                        </div>
+                        <div class="checkbox">
+                            <div class="first">
+                                <input type="checkbox" />
+                                <p class="tlt">Biscuits & Snacks</p>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <div class="first">
+                                <input type="checkbox" />
+                                <p class="tlt">Breads & Bakery</p>
+                            </div>
+                            <img src="assets/images/plus.svg" alt="plus" />
+                        </div>
+                        <div class="checkbox">
+                            <div class="first">
+                                <input type="checkbox" />
+                                <p class="tlt">Frozen Foods</p>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <div class="first">
+                                <input type="checkbox" />
+                                <p class="tlt">Grocery & Staples</p>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <div class="first">
+                                <input type="checkbox" />
+                                <p class="tlt">Healthcare</p>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <div class="first">
+                                <input type="checkbox" />
+                                <p class="tlt">Household Needs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="filter-color">
+                        <h4>Filter by Color</h4>
+                        <div class="greenbox">
+                            <div class="first">
+                                <div class="green"></div>
+                                <p class="tlt">Green</p>
+                            </div>
+                            <span>(1)</span>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="filter-Brands">
+                        <h4>Filter by Brands</h4>
+                        <div class="checkbox">
+                            <div class="first">
+                                <input type="checkbox" />
+                                <p class="tlt">Fresh</p>
+                            </div>
+                            <span>(1)</span>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="product-status">
+                        <h4>Product Status</h4>
+                        <div class="checkbox">
+                            <div class="first">
+                                <input type="checkbox" />
+                                <p class="tlt">In Stock</p>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <div class="first">
+                                <input type="checkbox" />
+                                <p class="tlt">On Sale</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-product">
+                    <div class="clear-filter">
+                        <div class="filteer">
+                            <img src="assets/images/cross.svg" alt="cross" />
+                            <p>Clear filters</p>
+                        </div>
+                        <div class="filteer">
+                            <img src="assets/images/cross.svg" alt="cross" />
+                            <p>Fruits & Vegetables</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="context">
+                            <div class="week">
+                                <p>Only This Week</p>
+                            </div>
+                            <h1>Grocery store with different treasures</h1>
+                            <p>
+                                We have prepared special discounts for you on
+                                grocery products...
+                            </p>
+                            <div class="button">
+                                <a href="#">Shop Now</a>
+                                <img
+                                    src="assets/images/arrow.svg"
+                                    alt="arrow"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sort">
+                        <div class="left">
+                            <p>Showing all 16 results</p>
+                        </div>
+                        <div class="right">
+                            <div class="sort-latest">
+                                <div class="latest">
+                                    <span>Sort:</span>
+                                    <p>Sort by latest</p>
+                                </div>
+                                <div class="item">
+                                    <span class="divider"></span>
+                                    <span>Show:</span>
+                                    <p>20 Items</p>
+                                </div>
+                            </div>
+                            <div class="icons">
+                                <a href="#">
+                                    <img
+                                        src="assets/images/Link.svg"
+                                        alt="menu"
+                                    />
+                                </a>
+                                <a href="#">
+                                    <img
+                                        src="assets/images/menu.svg"
+                                        alt="menu"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-products" id="product-container"></div>
+                </div>
+            </section>
+        </div>
+        <div class="footer">
+            <section class="bg-color">
+                <div class="wrapper">
+                    <div class="newsletter">
+                        <div class="left">
+                            <h1>Join our newsletter for £10 offers</h1>
+                            <p>
+                                Register now to get latest updates on promotions
+                                & coupons.Don’t worry, we not spam!
+                            </p>
+                        </div>
+                        <div class="right">
+                            <div class="input">
+                                <img src="assets/images/mail.svg" alt="mail" />
+                                <input
+                                    type="email"
+                                    placeholder="Enter your email address"
+                                />
+                                <button>SEND</button>
+                            </div>
+                            <span
+                                >By subscribing you agree to our
+                                <a href="#"
+                                    >Terms & Conditions and Privacy & Cookies
+                                    Policy.</a
+                                ></span
+                            >
+                        </div>
+                    </div>
+                    <hr class="dark" />
+                    <div class="middlee">
+                        <div class="sec-one">
+                            <h5>Do You Need Help ?</h5>
+                            <p>
+                                Autoseligen syr. Nek diarask fröbomba. Nör
+                                antipol kynoda nynat. Pressa fåmoska.
+                            </p>
+                            <div class="call">
+                                <div class="left">
+                                    <img
+                                        src="assets/images/phone.svg"
+                                        alt="phone"
+                                    />
+                                </div>
+                                <div class="right">
+                                    <p>Monday-Friday: 08am-9pm</p>
+                                    <h3><a href="#"> 0 800 300-353</a></h3>
+                                </div>
+                            </div>
+                            <div class="call">
+                                <div class="left">
+                                    <img
+                                        src="assets/images/mail-1.svg"
+                                        alt="phone"
+                                    />
+                                </div>
+                                <div class="right">
+                                    <p>Need help with your order?</p>
+                                    <h3><a href="#">info@example.com</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec-two">
+                            <h5><a href="#">Make Money with Us</a></h5>
+                            <p><a href="#">Sell on Grogin</a></p>
+                            <p><a href="#">Sell Your Services on Grogin</a></p>
+                            <p><a href="#">Sell on Grogin Business</a></p>
+                            <p><a href="#">Sell Your Apps on Grogin</a></p>
+                            <p><a href="#">Become an Affilate</a></p>
+                            <p><a href="#">Advertise Your Products</a></p>
+                            <p><a href="#">Sell-Publish with Us</a></p>
+                            <p><a href="#">Become an Blowwe Vendor</a></p>
+                        </div>
+                        <div class="sec-two">
+                            <h5><a href="#">Let Us Help You</a></h5>
+                            <p><a href="#">Accessibility Statement</a></p>
+                            <p><a href="#">Your Orders</a></p>
+                            <p><a href="#">Returns & Replacements</a></p>
+                            <p><a href="#">Shipping Rates & Policies</a></p>
+                            <p><a href="#">Refund and Returns Policy</a></p>
+                            <p><a href="#">Privacy Policy</a></p>
+                            <p><a href="#">Terms and Conditions</a></p>
+                            <p><a href="#">Cookie Settings</a></p>
+                            <p><a href="#">Help Center</a></p>
+                        </div>
+                        <div class="sec-two">
+                            <h5><a href="#">Get to Know Us</a></h5>
+                            <p><a href="#">Careers for Grogin</a></p>
+                            <p><a href="#">About Grogin</a></p>
+                            <p><a href="#">Inverstor Relations</a></p>
+                            <p><a href="#">Grogin Devices</a></p>
+                            <p><a href="#">Customer reviews</a></p>
+                            <p><a href="#">Social Responsibility</a></p>
+                            <p><a href="#">Store Locations</a></p>
+                        </div>
+                        <div class="sec-three">
+                            <div class="top">
+                                <div class="heading">
+                                    <h5>Download our app</h5>
+                                </div>
+                                <div class="playstore">
+                                    <a href="#"
+                                        ><img
+                                            src="assets/images/playstore.svg"
+                                            alt="playstore"
+                                    /></a>
+                                    <p>Download App Get -10% Discount</p>
+                                </div>
+                                <div class="playstore">
+                                    <a href="#"
+                                        ><img
+                                            src="assets/images/appstore.svg"
+                                            alt="appstore"
+                                    /></a>
+                                    <p>Download App Get -20% Discount</p>
+                                </div>
+                            </div>
+                            <div class="social">
+                                <p>Follow us on social media:</p>
+                                <div class="socials">
+                                    <a href="#"
+                                        ><img
+                                            src="assets/images/facebook.svg"
+                                            alt="facebook"
+                                    /></a>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/twitter.svg"
+                                            alt="twitter"
+                                    /></a>
+                                    <a
+                                        href="https://www.instagram.com/ft.ashiik_/"
+                                        target="_blank"
+                                        ><img
+                                            src="assets/images/instagram.svg"
+                                            alt="instagram"
+                                    /></a>
+                                    <a href="#"
+                                        ><img
+                                            src="assets/images/linkedin.svg"
+                                            alt="linkedin"
+                                    /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="dark" />
+                    <div class="terms">
+                        <div class="top">
+                            <div class="left">
+                                <p>
+                                    Copyright 2024 © Grogin WooCommerce
+                                    WordPress Theme. All right reserved. Powered
+                                    by <span>KLBTheme.</span>
+                                </p>
+                            </div>
+                            <div class="right">
+                                <a href="#">Terms and Conditions</a>
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Order Tracking</a>
+                            </div>
+                        </div>
+                        <div class="payment">
+                            <img src="assets/images/visa.svg" alt="visa" />
+                            <img
+                                src="assets/images/master-card.svg"
+                                alt="master-card"
+                            />
+                            <img src="assets/images/paypal.svg" alt="paypal" />
+                            <img src="assets/images/skrill.svg" alt="skrill" />
+                            <img src="assets/images/Klarna.svg" alt="Klarna" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
 </html>
