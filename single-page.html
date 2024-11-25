@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Grogin</title>
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/single-page.css" />
     </head>
-
     <body>
         <section class="sale">
             <div class="left">
@@ -61,21 +61,16 @@
         <hr />
         <div class="wrapper">
             <section class="header">
-                <div class="lft">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="assets/images/grogin-logo.svg" alt="logo" />
-                        </a>
-                    </div>
-                    <div class="location">
-                        <img src="assets/images/location.svg" alt="location" />
-                    </div>
-                    <div class="deliver">
-                        <p class="light">Deliver to</p>
-                        <p class="boldd">all</p>
-                    </div>
+                <div class="logo">
+                    <a href="index.html">  <img src="assets/images/grogin-logo.svg" alt="logo" /> </a>
                 </div>
-            
+                <div class="location">
+                    <img src="assets/images/location.svg" alt="location" />
+                </div>
+                <div class="deliver">
+                    <p class="light">Deliver to</p>
+                    <p class="boldd">all</p>
+                </div>
                 <div class="input">
                     <input
                         id="search-input"
@@ -87,19 +82,21 @@
                     </button>
                 </div>
                 <div class="icons">
-                    <div class="diss-search">
-                        <a href="#"><img src="assets/images/search.svg" alt="search"></a>
-                    </div>
-            
                     <div class="account">
                         <button>
-                            <img src="assets/images/account-icon.svg" alt="account" />
+                            <img
+                                src="assets/images/account-icon.svg"
+                                alt="account"
+                            />
                             <p>Account</p>
                         </button>
                     </div>
                     <div class="wishlist">
                         <button>
-                            <img src="assets/images/heart-icon.svg" alt="Wishlist" />
+                            <img
+                                src="assets/images/heart-icon.svg"
+                                alt="Wishlist"
+                            />
                             <p>Wishlist</p>
                         </button>
                     </div>
@@ -110,13 +107,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="hamburger">
-                    <a href="#">
-                        <img src="assets/images/hamburger.png" alt="hamburger" />
-                    </a>
-                </div>
             </section>
-            
         </div>
         <hr />
         <div class="wrapper">
@@ -178,7 +169,7 @@
         </div>
         <hr />
         <div class="wrapper">
-            <section class="row">
+            <section class="rows">
                 <a href="#" class="light"
                     >Home
                     <img
@@ -187,229 +178,211 @@
                         class="rot"
                     />
                 </a>
+                <a href="#" class="light"
+                    >Fruits & Vegetables
+                    <img
+                        src="assets/images/list-icon.svg"
+                        alt="list-icon"
+                        class="rot"
+                    />
+                </a>
+                <a href="#" class="light"
+                    >Exotic Fruits & Veggies
+                    <img
+                        src="assets/images/list-icon.svg"
+                        alt="list-icon"
+                        class="rot"
+                    />
+                </a>
 
-                <a href="#" class="dark">Shop</a>
+                <a href="#" class="dark"
+                    >Marketside Fresh Organic Bananas, Bunch</a
+                >
             </section>
-        </div>
-        <div class="wrapper">
-            <section class="product-section">
-                <div class="filter-section">
-                    <div class="widget-price-filter">
-                        <div>
-                        <h6>Widget price filter</h6>
-                          <a href="#" class="close-filter-btn">  
-                            <img src="assets/images/cross.svg" alt="cross">
-                            </a>
-                        </div>
-                        <div class="min-max">
-                            <div class="top">
-                                <span>Min price</span>
-                                <span>Max price</span>
-                            </div>
-                            <div class="bottom">
-                                <input type="text" placeholder="0" />
-                                <p>-</p>
-                                <input type="text" placeholder="30" />
-                            </div>
-                        </div>
-
-                        <div class="price-range">
-                            <div class="slider-track"></div>
-                            <div class="slider-track-highlight"></div>
-                            <div class="slider-thumb left"></div>
-                            <div class="slider-thumb right"></div>
-                        </div>
-                        <div class="range">
-                            <div class="left">
-                                <p>Price: $0 — $30</p>
-                            </div>
-                            <div class="right">
-                                <button>Filter</button>
-                            </div>
+            <section class="prod-section">
+                <div class="image">
+                    <div class="banana">
+                        <img src="assets/images/banana1.png" alt="" />
+                    </div>
+                    <div>
+                        <p>75%</p>
+                        <div class="orgg">
+                            <img src="assets/images/leaf-icon.svg" alt="leaf" />
+                            <p>Organic</p>
                         </div>
                     </div>
-                    <hr />
-
-                    <div class="product-categories">
-                        <h4>Product Categories</h4>
-                        <div class="checkbox">
-                            <div class="first">
-                                <input type="checkbox" checked />
-                                <p class="tlt">Fruits & Vegetables</p>
-                            </div>
-                            <img src="assets/images/plus.svg" alt="plus" />
-                        </div>
-                        <div class="checkbox">
-                            <div class="first">
-                                <input type="checkbox" />
-                                <p class="tlt">Baby & Pregnancy</p>
-                            </div>
-                        </div>
-                        <div class="checkbox">
-                            <div class="first">
-                                <input type="checkbox" />
-                                <p class="tlt">Beverages</p>
-                            </div>
-                            <img src="assets/images/plus.svg" alt="plus" />
-                        </div>
-                        <div class="checkbox">
-                            <div class="first">
-                                <input type="checkbox" />
-                                <p class="tlt">Meats & Seafood</p>
-                            </div>
-                            <img src="assets/images/plus.svg" alt="plus" />
-                        </div>
-                        <div class="checkbox">
-                            <div class="first">
-                                <input type="checkbox" />
-                                <p class="tlt">Biscuits & Snacks</p>
-                            </div>
-                        </div>
-                        <div class="checkbox">
-                            <div class="first">
-                                <input type="checkbox" />
-                                <p class="tlt">Breads & Bakery</p>
-                            </div>
-                            <img src="assets/images/plus.svg" alt="plus" />
-                        </div>
-                        <div class="checkbox">
-                            <div class="first">
-                                <input type="checkbox" />
-                                <p class="tlt">Frozen Foods</p>
-                            </div>
-                        </div>
-                        <div class="checkbox">
-                            <div class="first">
-                                <input type="checkbox" />
-                                <p class="tlt">Grocery & Staples</p>
-                            </div>
-                        </div>
-                        <div class="checkbox">
-                            <div class="first">
-                                <input type="checkbox" />
-                                <p class="tlt">Healthcare</p>
-                            </div>
-                        </div>
-                        <div class="checkbox">
-                            <div class="first">
-                                <input type="checkbox" />
-                                <p class="tlt">Household Needs</p>
-                            </div>
-                        </div>
-                    </div>
-                    <hr />
-
-                    <div class="filter-color">
-                        <h4>Filter by Color</h4>
-                        <div class="greenbox">
-                            <div class="first">
-                                <div class="green"></div>
-                                <p class="tlt">Green</p>
-                            </div>
-                            <span>(1)</span>
-                        </div>
-                    </div>
-                    <hr />
-
-                    <div class="filter-Brands">
-                        <h4>Filter by Brands</h4>
-                        <div class="checkbox">
-                            <div class="first">
-                                <input type="checkbox" />
-                                <p class="tlt">Fresh</p>
-                            </div>
-                            <span>(1)</span>
-                        </div>
-                    </div>
-                    <hr />
-
-                    <div class="product-status">
-                        <h4>Product Status</h4>
-                        <div class="checkbox">
-                            <div class="first">
-                                <input type="checkbox" />
-                                <p class="tlt">In Stock</p>
-                            </div>
-                        </div>
-                        <div class="checkbox">
-                            <div class="first">
-                                <input type="checkbox" />
-                                <p class="tlt">On Sale</p>
-                            </div>
-                        </div>
+                    <div class="zoom">
+                        <img src="assets/images/zoom.svg" alt="zoom" />
                     </div>
                 </div>
-
-                <div class="list-product">
-                    <div class="clear-filter">
-                        <div class="filteer">
-                            <img src="assets/images/cross.svg" alt="cross" />
-                            <p>Clear filters</p>
-                        </div>
-                        <div class="filteer">
-                            <img src="assets/images/cross.svg" alt="cross" />
-                            <p>Fruits & Vegetables</p>
-                        </div>
-                    </div>
-                    <div class="filter-button">
-                        <button>Filter</button>
-                    </div>
-
-                    <div class="card">
-                        <div class="context">
-                            <div class="week">
-                                <p>Only This Week</p>
-                            </div>
-                            <h1>Grocery store with different treasures</h1>
-                            <p>
-                                We have prepared special discounts for you on
-                                grocery products...
-                            </p>
-                            <div class="button">
-                                <a href="#">Shop Now</a>
+                <div class="details">
+                    <h1>Marketside Fresh Organic Bananas, Bunch</h1>
+                    <div class="review">
+                        <div class="reviesandrating">
+                            <div class="star">
+                                <img src="assets/images/star.svg" alt="star" />
+                                <img src="assets/images/star.svg" alt="star" />
+                                <img src="assets/images/star.svg" alt="star" />
                                 <img
-                                    src="assets/images/arrow.svg"
-                                    alt="arrow"
+                                    src="assets/images/empty-star.svg"
+                                    alt="emptystar"
+                                />
+                                <img
+                                    src="assets/images/empty-star.svg"
+                                    alt="emptystar"
                                 />
                             </div>
+                            <p>3.00</p>
+                            <span>2</span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="code">
+                            <span>SKU:</span>
+                            <p>E7F8G9H0</p>
                         </div>
                     </div>
-                    <div class="sort">
-                        <div class="left">
-                            <p>Showing all 16 results</p>
+                    <hr />
+
+                    <p>
+                        Vivamus adipiscing nisl ut dolor dignissim semper. Nulla
+                        luctus malesuada tincidunt. Class aptent taciti sociosqu
+                        ad litora torquent Vivamus adipiscing nisl ut dolor
+                        dignissim semper.
+                    </p>
+                    <div class="price">
+                        <h6>$0.89</h6>
+                        <p>$1.99</p>
+                    </div>
+                    <button>Order on WhatsApp</button>
+                    <div class="special-offer">
+                        <p>Special Offer :</p>
+                        <div class="countdown">
+                            <p>81</p>
+                            <p>06</p>
+                            <p>50</p>
+                            <span>:</span>
+                            <p>02</p>
                         </div>
-                        <div class="right">
-                            <div class="sort-latest">
-                                <div class="latest">
-                                    <span>Sort:</span>
-                                    <p>Sort by latest</p>
-                                </div>
-                                <div class="item">
-                                    <span class="divider"></span>
-                                    <span>Show:</span>
-                                    <p>20 Items</p>
-                                </div>
+                        <small>Remains until the end of the offer.</small>
+                    </div>
+                    <div class="buynow">
+                        <div class="quantity">
+                            <a href="#">-</a>
+                            <p>1</p>
+                            <a href="#">+</a>
+                        </div>
+                        <a href="#">
+                            <div class="addtocart">
+                                <img src="assets/images/bag.svg" alt="bag" />
+                                <p>Add to cart</p>
                             </div>
-                            <div class="icons">
-                                <a href="#">
-                                    <img
-                                        src="assets/images/Link.svg"
-                                        alt="menu"
-                                    />
-                                </a>
-                                <a href="#">
-                                    <img
-                                        src="assets/images/menu.svg"
-                                        alt="menu"
-                                    />
-                                </a>
+                        </a>
+                        <a href="#">
+                            <div class="buybutton">
+                                <img src="assets/images/bag.svg" alt="bag" />
+                                <p>Buy Now</p>
                             </div>
+                        </a>
+                    </div>
+                    <div class="paymentandwarrenty">
+                        <div class="payment">
+                            <img src="assets/images/card.svg" alt="card" />
+                            <p>
+                                <span>Payment.</span> Payment upon receipt of
+                                goods, Payment by card in the department, Google
+                                Pay, Online card, -5% discount in case of
+                                payment
+                            </p>
+                        </div>
+                        <hr />
+                        <div class="payment">
+                            <img
+                                src="assets/images/warranty.svg"
+                                alt="warrenty"
+                            />
+                            <p>
+                                <span>Warranty.</span> The Consumer Protection
+                                Act does not provide for the return of this
+                                product of proper quality.
+                            </p>
                         </div>
                     </div>
-                    <div class="list-products" id="product-container"></div>
+                    <div class="buttoms">
+                        <a href="#">
+                            <div class="share-buttons">
+                                <img
+                                    src="assets/images/heart-icon.svg"
+                                    alt="heart"
+                                />
+                                <p>Add to wishlist</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="share-buttons">
+                                <img
+                                    src="assets/images/share.svg"
+                                    alt="share"
+                                />
+                                <p>Share this Product</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="share-buttons">
+                                <img
+                                    src="assets/images/compare.svg"
+                                    alt="compare"
+                                />
+                                <p>Compare</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- details -->
+            </section>
+            <section class="description">
+                <div class="heading">
+                    <div class="active">
+                        <h6>Description</h6>
+                        <h6>Reviews (2)</h6>
+                    </div>
+                    <hr />
+                </div>
+                <div class="paragraph">
+                    <p>
+                        Quisque varius diam vel metus mattis, id aliquam diam
+                        rhoncus. Proin vitae magna in dui finibus malesuada et
+                        at nulla. Morbi elit ex, viverra vitae ante vel, blandit
+                        feugiat ligula. Fusce fermentum iaculis nibh, at sodales
+                        leo maximus a. Nullam ultricies sodales nunc, in
+                        pellentesque lorem mattis quis. Cras imperdiet est in
+                        nunc tristique lacinia. Nullam aliquam mauris eu
+                        accumsan tincidunt. Suspendisse velit ex, aliquet vel
+                        ornare vel, dignissim a tortor.
+                    </p>
+                    <p>
+                        Morbi ut sapien vitae odio accumsan gravida. Morbi vitae
+                        erat auctor, eleifend nunc a, lobortis neque. Praesent
+                        aliquam dignissim viverra. Maecenas lacus odio, feugiat
+                        eu nunc sit amet, maximus sagittis dolor. Vivamus nisi
+                        sapien, elementum sit amet eros sit amet, ultricies
+                        cursus ipsum. Sed consequat luctus ligula. Curabitur
+                        laoreet rhoncus blandit. Aenean vel diam ut arcu
+                        pharetra dignissim ut sed leo. Vivamus faucibus, ipsum
+                        in vestibulum vulputate, lorem orci convallis quam, sit
+                        amet consequat nulla felis pharetra lacus. Duis semper
+                        erat mauris, sed egestas purus commodo vel.
+                    </p>
+                </div>
+            </section>
+            <section class="related-products">
+                <h6>Related products</h6>
+                <div class="products">
+                   
+                    
                 </div>
             </section>
         </div>
+        <!-- wrapper  -->
         <div class="footer">
             <section class="bg-color">
                 <div class="wrapper">

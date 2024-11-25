@@ -1,6 +1,7 @@
 {
   "products": [
     {
+      "id": "1",
       "link": "#",
       "discountPercentage": 75,
       "images": {
@@ -21,6 +22,7 @@
       "is_organic": false
     },
     {
+      "id": "2",
       "link": "#",
       "discountPercentage": 50,
       "images": {
@@ -40,27 +42,9 @@
       },
       "is_organic": true
     },
+   
     {
-      "link": "#",
-      "discountPercentage": 31,
-      "images": {
-        "heartIcon": "assets/images/heart-icon.svg",
-        "itemImage": "assets/images/strawberry.jpg",
-        "starRating": "assets/images/star.svg",
-        "cartIcon": "assets/images/cart-white.svg"
-      },
-      "title": "Strawberries – 1lb",
-      "rating": {
-        "stars": 4,
-        "reviews": 3
-      },
-      "price": {
-        "currentRate": 1.50,
-        "originalRate": 2.15
-      },
-      "is_organic": false
-    },
-    {
+      "id": "3",
       "link": "#",
       "discountPercentage": 13,
       "images": {
@@ -81,6 +65,7 @@
       "is_organic": false
     },
     {
+      "id": "4",
       "link": "#",
       "discountPercentage": 58,
       "images": {
@@ -101,6 +86,7 @@
       "is_organic": false
     },
     {
+      "id": "5",
       "link": "#",
       "discountPercentage": 56,
       "images": {
@@ -121,6 +107,7 @@
       "is_organic": true
     },
     {
+      "id": "6",
       "link": "#",
       "discountPercentage": 16,
       "images": {
@@ -141,6 +128,7 @@
       "is_organic": false
     },
     {
+      "id": "7",
       "link": "#",
       "discountPercentage": 10,
       "images": {
@@ -161,6 +149,7 @@
       "is_organic": false
     },
     {
+      "id": "8",
       "link": "#",
       "discountPercentage": 26,
       "images": {
@@ -181,6 +170,7 @@
       "is_organic": false
     },
     {
+      "id": "9",
       "link": "#",
       "discountPercentage": 50,
       "images": {
@@ -201,6 +191,7 @@
       "is_organic": false
     },
     {
+      "id": "10",
       "link": "#",
       "discountPercentage": 75,
       "images": {
@@ -221,6 +212,7 @@
       "is_organic": false
     },
     {
+      "id": "11",
       "link": "#",
       "discountPercentage": 14,
       "images": {
@@ -241,6 +233,7 @@
       "is_organic": false
     },
     {
+      "id": "12",
       "link": "#",
       "discountPercentage": 36,
       "images": {
@@ -261,6 +254,7 @@
       "is_organic": false
     },
     {
+      "id": "13",
       "link": "#",
       "discountPercentage": 41,
       "images": {
@@ -281,6 +275,7 @@
       "is_organic": false
     },
     {
+      "id": "14",
       "link": "#",
       "discountPercentage": 8,
       "images": {
@@ -301,6 +296,7 @@
       "is_organic": false
     },
     {
+      "id": "15",
       "link": "#",
       "discountPercentage": 17,
       "images": {
@@ -319,6 +315,27 @@
         "originalRate": 9.88
       },
       "is_organic": true
+    },
+    {
+      "id": "16",
+      "link": "#",
+      "discountPercentage": 31,
+      "images": {
+        "heartIcon": "assets/images/heart-icon.svg",
+        "itemImage": "assets/images/strawberry.jpg",
+        "starRating": "assets/images/star.svg",
+        "cartIcon": "assets/images/cart-white.svg"
+      },
+      "title": "Strawberries – 1lb",
+      "rating": {
+        "stars": 4,
+        "reviews": 3
+      },
+      "price": {
+        "currentRate": 1.50,
+        "originalRate": 2.15
+      },
+      "is_organic": false
     }
   ]
 }

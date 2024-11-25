@@ -1209,8 +1209,6 @@ body > div.footer > section > div > div.middlee > div.sec-one > div:nth-child(4)
     font-size: 12px;
 }
 
-
-
 .middlee .sec-three .social .socials a img { 
     width: 36px;
     height: 36px;
@@ -1261,4 +1259,369 @@ body > div.footer > section > div > div.middlee > div.sec-one > div:nth-child(4)
     justify-content: space-between;
     padding-bottom: 50px;
 }
+body > div:nth-child(9) > section > div.filter-section > div.widget-price-filter > div:nth-child(1) > a > img{
+    display: none;
+}
+body > div:nth-child(4) > section > div.lft{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 253px;
+}
+body > div:nth-child(4) > section > div.icons > div.diss-search{
+    display: none;
+}
+body > div:nth-child(4) > section > div.hamburger > a > img{
+    display: none;
+}
+@media all and (max-width: 1400px){
+    .wrapper {
+        width: 90%
+    }
+    .list-products .product {
+        width: 204px;
+    }
+}
+@media screen and (max-width: 1380px) {
+    .filter-section {
+        position: fixed;
+        top: 0;
+        left: -100%; /* Start hidden */
+        width: 300px; /* Adjust width */
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        transition: left 0.3s ease-in-out;
+        z-index: 1000;
+        overflow-y: auto; /* Enable scrolling */
+    }
 
+    .filter-section.active {
+        left: 0; /* Slide into view */
+        padding: 30px 20px 20px 20px ;
+    }
+    .filter-button button {
+       
+        top: 20px;
+        left: 20px;
+        background-color: #E5E7EB;
+        color: #000;
+        border: none;
+        padding: 10px 15px;
+        font-size: 14px;
+        border-radius: 8px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    body > div:nth-child(9) > section > div.filter-section > div.widget-price-filter > div:nth-child(1) > a > img{
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+    body > div:nth-child(9) > section > div.filter-section.active > div.widget-price-filter > div:nth-child(1){
+        display: flex;
+        width: 260px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .list-products .product {
+        width: 248px;
+    }
+}
+@media all and (max-width: 1280px){
+    .list-products .product {
+        width: 230px;
+    }
+    .header .input {
+        width: 650px;
+    }
+    .header .input input {
+        width: 590px;
+    }
+}
+@media all and (max-width: 1080px){
+    .list-products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .list-products .product {
+        width: 243px;
+    }
+    .header .input {
+        width: 519px;
+    }
+    .header .input input {
+        width: 464px;
+    }
+    body > div.footer > section > div > div.middlee > div.sec-one{
+        width: 242px;
+    }
+    .middlee .sec-one p {
+        width: 242px;
+    }
+    body > div.footer > section > div > div.middlee > div.sec-one > div > div.right > p{
+        width: 194px;
+    }
+    .sale .left {
+        font-size: 11px;
+    }
+    .sale .right p {
+        font-size: 11px;
+    }
+    .sale .right p span {
+        font-size: 17px;
+    }
+    body > div:nth-child(4) > section > div.lft {
+        width: 240px;
+    }
+}
+@media all and (max-width: 980px) {
+    .list-products .product {
+        width: 220px;
+    }
+
+    .header .input {
+        display: none; 
+        position: absolute; 
+        top: 149px; 
+        left: 207px; 
+        width: 534px;
+        background-color: #F3F4F6; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        z-index: 100; 
+        padding: 5px; 
+        border-radius: 6px; 
+        opacity: 0; 
+        visibility: hidden; 
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+   
+    #search-button > img{
+        display: none;
+    }
+    
+    .header .input[style="display: flex;"] {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    body > div:nth-child(4) > section > div.icons > div.diss-search {
+        display: block;
+    }
+
+    body > div:nth-child(4) > section > div.icons > div.diss-search > a > img {
+        width: 26px;
+        margin-right: 20px;
+    }
+
+    .header .icons {
+        width: 227px;
+        position: relative; 
+    }
+    .sale .left{
+        margin-left: 100px;
+    }
+    .sale .right{
+        margin-right: 100px;
+    }
+    .middlee p{
+        display: none;
+    }
+    .middlee{
+        flex-direction: column;
+        align-items: center;
+    }
+    .middlee .sec-one .call{
+        display: none;
+    }
+    .middlee h5{
+        font-size: 20px;
+    }
+    body > div.footer > section > div > div.middlee > div.sec-three > div.social > div{
+        width: 882px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .middlee .sec-three .top .playstore{
+        display: none;
+    }
+    body > div.footer > section > div > div.middlee > div.sec-one {
+        width: 188px;
+    }
+    body > div.footer > section > div > div.middlee > div.sec-three > div.top > div.heading{
+        text-align: center;
+    }
+}
+@media all and (max-width: 768px){
+    .list-products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    body > div.footer > section > div > div.middlee > div.sec-three > div.social > div {
+        width: 500px;
+    }
+    .newsletter{
+        flex-direction: column;
+        align-items: center;
+        height: 308px;
+    }
+    .newsletter .left p {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .list-products .product {
+        width: 230px;
+    }
+    .sale {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sale .left{
+        margin-left: 0px;
+    }
+    .sale .right {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .abt .left {
+        width: 227px;
+    }
+    body > div:nth-child(2) > section > div.left > p{
+        display: none;
+    }
+    body > div:nth-child(6) > section > div.right > div.finished{
+        display: none;
+    }
+    .category .right {
+        width: 140px;
+    }
+    .category .left {
+        width:  485px;
+    }
+    .header .input {
+        width: 388px;
+    }
+}
+@media all and (max-width: 640px){
+    .list-products .product {
+        width: 192px;
+    }
+    body > div.footer > section > div > div.terms > div.top > div.left > p{
+        width: 343px;
+    }
+    body > div.footer > section > div > div.terms > div.top > div.left{
+        width: 545px;
+    }
+    .category .left {
+        width: 415px;
+    }
+    .header .input {
+        left: 116px;
+        top: 162px;
+    }
+}
+@media all and (max-width: 480px){
+    .list-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card .context h1{
+        width: 390px;
+        font-size: 27px;
+    }
+    body > div.footer > section > div > div.middlee > div.sec-three > div.social > div {
+        width: 432px;
+    }
+    .terms .top {
+        flex-direction: column;
+    }
+    body > div.footer > section > div > div.terms > div.top > div.left > p {
+        width: 431px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .terms .top .right {
+        justify-content: space-evenly;
+        width: 432px;
+    }
+    .terms .payment {
+        width: 432px;
+        justify-content: space-evenly;
+        padding-bottom: 50px;
+    }
+    .list-products .product {
+        width: 215px;
+    }
+    .category{
+        display: none;
+    }
+    body > div:nth-child(4) > section > div.lft > div.deliver{
+        display: none;
+    }
+    body > div:nth-child(4) > section > div.lft > div.location{
+        display: none;
+    }
+    body > div.footer > section > div > div.terms > div.top > div.left {
+        width: 432px;
+    }
+    .sort .right {
+        width: 270px;
+    }
+    .header .input {
+        top: 180px;
+        left: 40px;
+    }
+}
+@media all and (max-width: 360px){
+    .card .context h1 {
+        width: 292px;
+    }
+    .card .context p{
+        width: 288px;
+    }
+    body > div.footer > section > div > div.terms > div.top > div.left > p {
+        width: 325px;
+    }
+    .terms .top .right {
+        width: 324px;
+    }
+    .terms .payment {
+        width: 326px;
+    }
+    .newsletter .right .input {
+        width: 324px;
+    }
+    body > div.footer > section > div > div.terms > div.top > div.left {
+        width: 324px;
+    }
+    body > div.footer > section > div > div.middlee > div.sec-three > div.social > div {
+        width: 324px;
+    }
+    .list-products .product {
+        width: 162px;
+    }
+    .list-products .product .title p {
+        width: 140px;
+    }   
+    .sort{
+        display: none;
+    }
+    .sale{
+        display: none;
+    }
+    .abt{
+        display: none;
+    }
+    body > div:nth-child(4) > section > div.icons > div{
+        display: none;
+    }
+    body > div:nth-child(4) > section > div.hamburger > a > img{
+        display: block;
+        width: 30px;
+    }
+    .header .icons {
+        width: 32px;
+    }
+    .header .input {
+        top: 80px;
+        left: 2px;
+    }
+}

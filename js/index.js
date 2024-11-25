@@ -32,8 +32,6 @@ saleEndDate.setDate(saleEndDate.getDate() + 47); // Adjust the days as needed
 // Start the countdown
 startCountdown(saleEndDate.getTime());
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const productContainer = document.getElementById("product-container");
     const searchInput = document.getElementById("search-input");
@@ -50,11 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const generateStars = (filledStars, filledStarSrc, emptyStarSrc) => {
                 let starsHTML = "";
                 for (let i = 0; i < 5; i++) {
-                    if (i < filledStars) {
-                        starsHTML += `<img src="${filledStarSrc}" alt="star">`;
-                    } else {
-                        starsHTML += `<img src="${emptyStarSrc}" alt="empty star">`;
-                    }
+                    starsHTML += `<img src="${i < filledStars ? filledStarSrc : emptyStarSrc}" alt="star">`;
                 }
                 return starsHTML;
             };
@@ -70,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const productHTML = `
                 <div class="product">
-                    <a href="${product.link}">
+                    <a href="single-page.html?id=${product.id}">
                         <div class="top">
                             <p>${product.discountPercentage}%</p>
                             <img src="${product.images.heartIcon}" alt="heart">
@@ -126,10 +120,6 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then(data => {
-            if (!data.products || data.products.length === 0) {
-                throw new Error("No products available");
-            }
-
             productsData = data.products; // Store products for filtering
             renderProducts(productsData); // Render initial products
 
@@ -141,4 +131,243 @@ document.addEventListener("DOMContentLoaded", () => {
             productContainer.innerHTML = `<p>Error: ${error.message}</p>`;
             console.error(error); // Log the error for debugging
         });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const productSection = document.querySelector(".prod-section");
+    const relatedProductsContainer = document.querySelector(".related-products .products");
+
+    // Function to render stars
+    const renderStars = (stars) => {
+        let starHTML = "";
+        for (let i = 0; i < 5; i++) {
+            starHTML += `<img src="${i < stars ? "assets/images/star.svg" : "assets/images/empty-star.svg"}" alt="star">`;
+        }
+        return starHTML;
+    };
+
+    // Function to render product details
+    const renderProductDetails = (product) => {
+        const itemImage = productSection.querySelector(".image .banana img");
+        itemImage.src = product.images.itemImage;
+        itemImage.alt = product.title;
+
+        productSection.querySelector(".image p").textContent = `${product.discountPercentage}%`;
+
+        const organicDiv = productSection.querySelector(".orgg");
+        organicDiv.style.display = product.is_organic ? "flex" : "none";
+
+        productSection.querySelector(".details h1").textContent = product.title;
+
+        const starsContainer = productSection.querySelector(".reviesandrating .star");
+        starsContainer.innerHTML = renderStars(product.rating.stars);
+
+        productSection.querySelector(".reviesandrating p").textContent = product.rating.stars.toFixed(1);
+        productSection.querySelector(".reviesandrating span").textContent = product.rating.reviews;
+
+        productSection.querySelector(".price h6").textContent = `$${product.price.currentRate.toFixed(2)}`;
+        productSection.querySelector(".price p").textContent = `$${product.price.originalRate.toFixed(2)}`;
+    };
+
+    // Function to render related products
+    const renderRelatedProducts = (products, topProductId) => {
+        // Filter out the main product and limit the number to 6
+        const filteredProducts = products
+            .filter(product => product.id !== topProductId)  // Exclude the top product
+            .slice(0, 6);  // Limit to 6 products
+
+        filteredProducts.forEach((product) => {
+            const productHTML = `
+                <div class="product">
+                    <a href="${product.link}">
+                        <div class="top">
+                            <p>${product.discountPercentage}%</p>
+                            <img src="${product.images.heartIcon}" alt="heart">
+                        </div>
+                        <div class="middle">
+                            <img src="${product.images.itemImage}" alt="${product.title}">
+                        </div>
+                        <div class="title">
+                            <p>${product.title}</p>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                ${renderStars(product.rating.stars)}
+                            </div>
+                            <span>${product.rating.reviews} reviews</span>
+                        </div>
+                        <div class="rate">
+                            <p class="rate">$${product.price.currentRate.toFixed(2)}</p>
+                            <p class="discount">$${product.price.originalRate.toFixed(2)}</p>
+                        </div>
+                        <div class="bottom">
+                            <div class="cart">
+                                <img src="${product.images.cartIcon}" alt="cart">
+                            </div>
+                            <p>${product.is_organic ? "Organic" : "In Stock"}</p>
+                        </div>
+                    </a>
+                </div>
+            `;
+            relatedProductsContainer.innerHTML += productHTML;
+        });
+    };
+
+    // Function to get the product ID from the URL
+    const getProductID = () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get("id");
+    };
+
+    // Fetch and render product details and related products
+    fetch("data.json")
+        .then(response => response.json())
+        .then(data => {
+            const productID = getProductID();
+            const product = data.products.find(p => p.id === productID);
+            if (product) {
+                renderProductDetails(product);
+                renderRelatedProducts(data.products, product.id);  // Pass the current product's ID to render related products
+            } else {
+                productSection.innerHTML = "<p>Product not found.</p>";
+            }
+        })
+        .catch(error => {
+            productSection.innerHTML = `<p>Error: ${error.message}</p>`;
+            console.error(error);
+        });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const relatedProductsContainer = document.querySelector(".related-products .products");
+
+    // Function to render stars
+    const renderStars = (stars) => {
+        let starHTML = "";
+        for (let i = 0; i < 5; i++) {
+            starHTML += `<img src="${i < stars ? "assets/images/star.svg" : "assets/images/empty-star.svg"}" alt="star">`;
+        }
+        return starHTML;
+    };
+
+    // Function to render related products
+    const renderRelatedProducts = (products, topProductId) => {
+        // Filter out the main product and limit the number to 6
+        const filteredProducts = products
+            .filter(product => product.id !== topProductId)  // Exclude the top product
+            .slice(0, 6);  // Limit to 6 products
+
+        filteredProducts.forEach((product) => {
+            const productHTML = `
+                <div class="product">
+                    <a href="${product.link}">
+                        <div class="top">
+                            <p>${product.discountPercentage}%</p>
+                            <img src="${product.images.heartIcon}" alt="heart">
+                        </div>
+                        <div class="middle">
+                            <img src="${product.images.itemImage}" alt="${product.title}">
+                        </div>
+                        <div class="title">
+                            <p>${product.title}</p>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                ${renderStars(product.rating.stars)}
+                            </div>
+                            <span>${product.rating.reviews} reviews</span>
+                        </div>
+                        <div class="rate">
+                            <p class="rate">$${product.price.currentRate.toFixed(2)}</p>
+                            <p class="discount">$${product.price.originalRate.toFixed(2)}</p>
+                        </div>
+                        <div class="bottom">
+                            <div class="cart">
+                                <img src="${product.images.cartIcon}" alt="cart">
+                            </div>
+                            <p>${product.is_organic ? "Organic" : "In Stock"}</p>
+                        </div>
+                    </a>
+                </div>
+            `;
+            relatedProductsContainer.innerHTML += productHTML;
+        });
+    };
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const filterSection = document.querySelector('.filter-section');
+    const closeButton = document.querySelector('.close-filter-btn');
+    const toggleButton = document.querySelector('.filter-button button');
+
+    // Close the filter section when the close button is clicked
+    closeButton.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default anchor action
+        filterSection.classList.remove('active'); // Hide the filter section
+        if (toggleButton) toggleButton.textContent = 'Filter'; // Reset toggle button text
+    });
+
+    // Function to toggle the filter section
+    function handleToggleButton() {
+        if (filterSection.classList.contains('active')) {
+            filterSection.classList.remove('active');
+            toggleButton.textContent = 'Filter';
+        } else {
+            filterSection.classList.add('active');
+            toggleButton.textContent = 'Close Filter';
+        }
+    }
+
+    // Add toggle functionality for the button
+    if (toggleButton) {
+        toggleButton.addEventListener('click', handleToggleButton);
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const dissSearch = document.querySelector(".diss-search");
+    const inputDiv = document.querySelector(".header .input");
+
+    // Function to toggle the search bar
+    const toggleSearchBar = () => {
+        if (inputDiv.style.display === "none" || inputDiv.style.display === "") {
+            inputDiv.style.display = "flex"; // Show the search bar
+        } else {
+            inputDiv.style.display = "none"; // Hide the search bar
+        }
+    };
+
+    // Add click event listener only for screens <= 980px
+    const applyToggleForSmallScreens = () => {
+        if (window.matchMedia("(max-width: 980px)").matches) {
+            dissSearch.addEventListener("click", toggleSearchBar);
+        } else {
+            dissSearch.removeEventListener("click", toggleSearchBar);
+            inputDiv.style.display = ""; // Reset display style on larger screens
+        }
+    };
+
+    // Run on load and on window resize
+    applyToggleForSmallScreens();
+    window.addEventListener("resize", applyToggleForSmallScreens);
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const menuItems = document.querySelector('.menu-items');
+
+    // Event listener for the hamburger click
+    hamburger.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default link behavior
+
+        // Toggle the visibility of the menu-items div
+        if (menuItems.style.display === 'none' || menuItems.style.display === '') {
+            menuItems.style.display = 'flex'; // Show menu items
+        } else {
+            menuItems.style.display = 'none'; // Hide menu items
+        }
+    });
 });
