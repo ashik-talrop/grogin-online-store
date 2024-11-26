@@ -555,3 +555,171 @@ body > div:nth-child(8) > section.related-products > h6{
     font-weight: 700;
     text-transform: uppercase;
 }
+@media all and (max-width: 1400px){
+    .products .product{
+        width: 210px;
+    }
+}
+@media all and (max-width: 1380px){
+    .products .product {
+        width: 207px;
+    }
+}
+@media all and (max-width: 1280px){
+    body > div:nth-child(8) > section.prod-section > div.image > div.banana {
+        width: 610px;
+    }
+    .products .product {
+        width: 192px;
+    }
+}
+@media all and (max-width: 1080px){
+    body > div:nth-child(8) > section.prod-section > div.image > div.banana {
+        width: 500px;
+    }
+    .prod-section .details h1 {
+        font-size: 32px;
+    }
+    .products{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .products .product {
+        width: 194px;
+    }
+    body > div:nth-child(8) > section.prod-section > div.details{
+        width: 48.5%;
+    }
+    body > div:nth-child(8) > section.prod-section > div.image > div.zoom > img {
+        bottom: 259px;
+    }
+}
+@media all and (max-width: 980px){
+    .prod-section .details .buynow a .addtocart{
+        width: 120px;
+        padding: 3px 12px
+    }
+    .buybutton{
+        width: 120px;
+        padding: 3px 12px
+    }
+    .prod-section .details .buynow {
+        width: 100%;
+    }
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    body > div:nth-child(8) > section.prod-section > div.details {
+        width: 43.4%;
+    }
+    .prod-section .details .special-offer .countdown {
+        width: 63%;
+    }
+    .prod-section .details .buttoms {
+        width: auto;
+    }
+    .products .product {
+        width: auto;
+    }
+   
+}
+@media all and (max-width: 768px){
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    body > div:nth-child(8) > section.prod-section > div.image > div.banana {
+        width: 350px;
+    }
+    body > div:nth-child(8) > section.prod-section > div.details {
+        width: 49.4%;
+    }
+    .prod-section .details .special-offer .countdown {
+        width: 77%;
+    }
+    .prod-section .details .buynow .quantity {
+        width: 82px;
+    }
+    body > div:nth-child(8) > section.prod-section > div.image > div.zoom > img {
+        bottom: 440px;
+    }
+
+}
+@media all and (max-width: 640px){
+    .prod-section {
+        flex-direction: column;
+    }
+    body > div:nth-child(8) > section.prod-section > div.image > div.banana {
+        width: 576px;
+    }
+    body > div:nth-child(8) > section.prod-section > div.image > div.zoom > img {
+        bottom: 23px;
+    }
+    body > div:nth-child(8) > section.prod-section > div.details {
+        width: 100%;
+    }
+    .prod-section .details .special-offer .countdown {
+        width: 33%;
+    }
+    .prod-section .details .buynow {
+        width: 80%;
+    }
+    .prod-section .details .buynow a .addtocart {
+        width: 140px;
+        padding: 3px 12px;
+    }
+    .prod-section .details .buynow .quantity {
+        width: 105px;
+    }
+    .buybutton{
+        width: 140px;
+        
+    }
+}
+@media all and (max-width: 480px){
+    .rows{
+        display: none;
+    }
+    body > div:nth-child(8) > section.prod-section > div.image > div.banana {
+        width: 100%;
+    }
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .prod-section .details .buynow {
+        width: 100%;
+    }
+    .prod-section .details .special-offer small {
+        margin-left: 9px;
+    }
+}
+@media all and (max-width: 360px){
+    .prod-section .details .special-offer{
+        flex-direction: column;
+        height: 120px;
+        justify-content: space-evenly;
+    }
+    .prod-section .details .special-offer .countdown {
+        width: 60%;
+    }
+    .prod-section .details .buynow{
+        flex-direction: column;
+        height: 170px;
+    }
+    .prod-section .details .buynow .quantity {
+        width: 160px;
+    }
+    .prod-section .details .buynow a .addtocart {
+        width: 160px;
+    }
+    .buybutton {
+        width: 160px;
+    }
+    .prod-section .details .paymentandwarrenty {
+        height: 209px;
+    }
+    .prod-section .details .paymentandwarrenty .payment {
+        height: 100px;
+    }
+    .products .product {
+        width: 162px;
+    }
+}

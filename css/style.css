@@ -210,7 +210,7 @@ hr.dark {
 }
 
 
-.header .icons { 
+body > div:nth-child(4) > section > div.icons > div.ham { 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -219,36 +219,36 @@ hr.dark {
 }
 
 
-.header .icons .account button img { 
+body > div:nth-child(4) > section > div.icons > div.ham .account button img { 
     width: 22px;
 
 }
 
-.header .icons .account button p { 
+body > div:nth-child(4) > section > div.icons > div.ham .account button p { 
     font-size: 12px;
 	font-family: "Inter-Semibold";
 
 }
 
 
-.header .icons .wishlist button img { 
+body > div:nth-child(4) > section > div.icons > div.ham .wishlist button img { 
     width: 25px;
 
 }
 
-.header .icons .wishlist button p { 
+body > div:nth-child(4) > section > div.icons > div.ham .wishlist button p { 
     font-size: 12px;
 	font-family: "Inter-Semibold";
 
 }
 
 
-.header .icons .cart button img { 
+body > div:nth-child(4) > section > div.icons > div.ham .cart button img { 
     width: 31px;
 
 }
 
-.header .icons .cart button p { 
+body > div:nth-child(4) > section > div.icons > div.ham .cart button p { 
     font-size: 12px;
 	font-family: "Inter-Semibold";
 
@@ -1413,7 +1413,7 @@ body > div:nth-child(4) > section > div.hamburger > a > img{
         margin-right: 20px;
     }
 
-    .header .icons {
+    body > div:nth-child(4) > section > div.icons > div.ham {
         width: 227px;
         position: relative; 
     }
@@ -1450,6 +1450,18 @@ body > div:nth-child(4) > section > div.hamburger > a > img{
     }
     body > div.footer > section > div > div.middlee > div.sec-three > div.top > div.heading{
         text-align: center;
+    }
+    body > div:nth-child(4) > section > div.icons{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        align-items: center;
+    }
+    body > div:nth-child(4) > section{
+        width: auto;
+    }
+    body > div:nth-child(4) > section > div.hamburger{
+        display: none;
     }
 }
 @media all and (max-width: 768px){
@@ -1500,6 +1512,9 @@ body > div:nth-child(4) > section > div.hamburger > a > img{
     .header .input {
         width: 388px;
     }
+    body > div:nth-child(4) > section {
+        width: auto;
+    }
 }
 @media all and (max-width: 640px){
     .list-products .product {
@@ -1518,6 +1533,24 @@ body > div:nth-child(4) > section > div.hamburger > a > img{
         left: 116px;
         top: 162px;
     }
+    body > div:nth-child(4) > section > div.icons > div.ham {
+        display: none;
+    }
+    body > div:nth-child(4) > section > div.hamburger > a > img {
+        display: block;
+        width: 30px;
+    }
+    body > div:nth-child(4) > section > div.hamburger {
+        display: block;
+    }
+    body > div:nth-child(4) > section > div.icons{
+        width: auto;
+    }
+    body > div:nth-child(4) > section > div.icons > div.diss-search > a > img {
+        margin-left: 240px;
+    }
+
+
 }
 @media all and (max-width: 480px){
     .list-products {
@@ -1569,6 +1602,9 @@ body > div:nth-child(4) > section > div.hamburger > a > img{
         top: 180px;
         left: 40px;
     }
+    body > div:nth-child(4) > section > div.icons > div.diss-search > a > img {
+        margin-left: 211px;
+    }
 }
 @media all and (max-width: 360px){
     .card .context h1 {
@@ -1610,18 +1646,13 @@ body > div:nth-child(4) > section > div.hamburger > a > img{
     .abt{
         display: none;
     }
-    body > div:nth-child(4) > section > div.icons > div{
-        display: none;
-    }
-    body > div:nth-child(4) > section > div.hamburger > a > img{
-        display: block;
-        width: 30px;
-    }
-    .header .icons {
-        width: 32px;
+    body > div:nth-child(4) > section > div.icons > div.diss-search > a > img {
+        margin-left: 106px;
     }
     .header .input {
         top: 80px;
-        left: 2px;
+        left: 12px;
+        width: 328px;
     }
+   
 }

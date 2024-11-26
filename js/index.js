@@ -355,19 +355,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.hamburger');
-    const menuItems = document.querySelector('.menu-items');
-
-    // Event listener for the hamburger click
-    hamburger.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevent default link behavior
-
-        // Toggle the visibility of the menu-items div
-        if (menuItems.style.display === 'none' || menuItems.style.display === '') {
-            menuItems.style.display = 'flex'; // Show menu items
-        } else {
-            menuItems.style.display = 'none'; // Hide menu items
-        }
-    });
-});
