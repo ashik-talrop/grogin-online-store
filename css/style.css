@@ -1286,18 +1286,18 @@ body > div:nth-child(4) > section > div.hamburger > a > img{
     .filter-section {
         position: fixed;
         top: 0;
-        left: -100%; /* Start hidden */
-        width: 300px; /* Adjust width */
+        left: -100%; 
+        width: 300px; 
         height: 100vh;
         background-color: #fff;
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
         transition: left 0.3s ease-in-out;
         z-index: 1000;
-        overflow-y: auto; /* Enable scrolling */
+        overflow-y: auto; 
     }
 
     .filter-section.active {
-        left: 0; /* Slide into view */
+        left: 0; 
         padding: 30px 20px 20px 20px ;
     }
     .filter-button button {

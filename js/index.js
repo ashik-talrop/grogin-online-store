@@ -1,4 +1,3 @@
-// Countdown Timer Script
 function startCountdown(endDate) {
     const countdownInterval = setInterval(() => {
         const now = new Date().getTime();
@@ -25,21 +24,19 @@ function startCountdown(endDate) {
     }, 1000);
 }
 
-// Set the end date of the sale (e.g., 47 days from now)
 const saleEndDate = new Date();
-saleEndDate.setDate(saleEndDate.getDate() + 47); // Adjust the days as needed
+saleEndDate.setDate(saleEndDate.getDate() + 47); 
 
-// Start the countdown
 startCountdown(saleEndDate.getTime());
 
 document.addEventListener("DOMContentLoaded", () => {
     const productContainer = document.getElementById("product-container");
     const searchInput = document.getElementById("search-input");
     const searchButton = document.getElementById("search-button");
-    let productsData = []; // To store products for filtering
+    let productsData = []; 
 
     const renderProducts = (products) => {
-        productContainer.innerHTML = ""; // Clear existing products
+        productContainer.innerHTML = ""; 
         if (products.length === 0) {
             productContainer.innerHTML = "<p>No products found.</p>";
             return;
@@ -100,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             `;
 
-            productContainer.innerHTML += productHTML; // Append each product to the container
+            productContainer.innerHTML += productHTML; 
         });
     };
 
@@ -109,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const filteredProducts = productsData.filter(product =>
             product.title.toLowerCase().includes(searchTerm)
         );
-        renderProducts(filteredProducts); // Re-render products based on search
+        renderProducts(filteredProducts); 
     };
 
     fetch("data.json")
@@ -120,16 +117,15 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then(data => {
-            productsData = data.products; // Store products for filtering
-            renderProducts(productsData); // Render initial products
+            productsData = data.products; 
+            renderProducts(productsData); 
 
-            // Add event listeners for search input and button
             searchInput.addEventListener("input", filterProducts);
             searchButton.addEventListener("click", filterProducts);
         })
         .catch(error => {
             productContainer.innerHTML = `<p>Error: ${error.message}</p>`;
-            console.error(error); // Log the error for debugging
+            console.error(error); 
         });
 });
 
@@ -138,7 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const productSection = document.querySelector(".prod-section");
     const relatedProductsContainer = document.querySelector(".related-products .products");
 
-    // Function to render stars
     const renderStars = (stars) => {
         let starHTML = "";
         for (let i = 0; i < 5; i++) {
@@ -147,7 +142,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return starHTML;
     };
 
-    // Function to render product details
     const renderProductDetails = (product) => {
         const itemImage = productSection.querySelector(".image .banana img");
         itemImage.src = product.images.itemImage;
@@ -170,12 +164,10 @@ document.addEventListener("DOMContentLoaded", () => {
         productSection.querySelector(".price p").textContent = `$${product.price.originalRate.toFixed(2)}`;
     };
 
-    // Function to render related products
     const renderRelatedProducts = (products, topProductId) => {
-        // Filter out the main product and limit the number to 6
         const filteredProducts = products
-            .filter(product => product.id !== topProductId)  // Exclude the top product
-            .slice(0, 6);  // Limit to 6 products
+            .filter(product => product.id !== topProductId)  
+            .slice(0, 6);  
 
         filteredProducts.forEach((product) => {
             const productHTML = `
@@ -214,13 +206,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    // Function to get the product ID from the URL
     const getProductID = () => {
         const urlParams = new URLSearchParams(window.location.search);
         return urlParams.get("id");
     };
 
-    // Fetch and render product details and related products
     fetch("data.json")
         .then(response => response.json())
         .then(data => {
@@ -228,7 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const product = data.products.find(p => p.id === productID);
             if (product) {
                 renderProductDetails(product);
-                renderRelatedProducts(data.products, product.id);  // Pass the current product's ID to render related products
+                renderRelatedProducts(data.products, product.id);  
             } else {
                 productSection.innerHTML = "<p>Product not found.</p>";
             }
@@ -243,7 +233,6 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const relatedProductsContainer = document.querySelector(".related-products .products");
 
-    // Function to render stars
     const renderStars = (stars) => {
         let starHTML = "";
         for (let i = 0; i < 5; i++) {
@@ -252,12 +241,10 @@ document.addEventListener("DOMContentLoaded", () => {
         return starHTML;
     };
 
-    // Function to render related products
     const renderRelatedProducts = (products, topProductId) => {
-        // Filter out the main product and limit the number to 6
         const filteredProducts = products
-            .filter(product => product.id !== topProductId)  // Exclude the top product
-            .slice(0, 6);  // Limit to 6 products
+            .filter(product => product.id !== topProductId)  
+            .slice(0, 6);  
 
         filteredProducts.forEach((product) => {
             const productHTML = `
@@ -302,14 +289,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeButton = document.querySelector('.close-filter-btn');
     const toggleButton = document.querySelector('.filter-button button');
 
-    // Close the filter section when the close button is clicked
     closeButton.addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent the default anchor action
-        filterSection.classList.remove('active'); // Hide the filter section
-        if (toggleButton) toggleButton.textContent = 'Filter'; // Reset toggle button text
+        event.preventDefault(); 
+        filterSection.classList.remove('active'); 
+        if (toggleButton) toggleButton.textContent = 'Filter'; 
     });
 
-    // Function to toggle the filter section
     function handleToggleButton() {
         if (filterSection.classList.contains('active')) {
             filterSection.classList.remove('active');
@@ -320,7 +305,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Add toggle functionality for the button
     if (toggleButton) {
         toggleButton.addEventListener('click', handleToggleButton);
     }
@@ -330,26 +314,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const dissSearch = document.querySelector(".diss-search");
     const inputDiv = document.querySelector(".header .input");
 
-    // Function to toggle the search bar
     const toggleSearchBar = () => {
         if (inputDiv.style.display === "none" || inputDiv.style.display === "") {
-            inputDiv.style.display = "flex"; // Show the search bar
+            inputDiv.style.display = "flex"; 
         } else {
-            inputDiv.style.display = "none"; // Hide the search bar
+            inputDiv.style.display = "none"; 
         }
     };
 
-    // Add click event listener only for screens <= 980px
     const applyToggleForSmallScreens = () => {
         if (window.matchMedia("(max-width: 980px)").matches) {
             dissSearch.addEventListener("click", toggleSearchBar);
         } else {
             dissSearch.removeEventListener("click", toggleSearchBar);
-            inputDiv.style.display = ""; // Reset display style on larger screens
+            inputDiv.style.display = ""; 
         }
     };
 
-    // Run on load and on window resize
     applyToggleForSmallScreens();
     window.addEventListener("resize", applyToggleForSmallScreens);
 });
